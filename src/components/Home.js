@@ -1,6 +1,6 @@
-import logo from "../assets/img/logo.svg";
+import React from "react";
 
-export default function Home() {
+const Home = () => {
   return (
     <section className="text-gray-700 body-font">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -21,13 +21,18 @@ export default function Home() {
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src={logo}
-          />
+          <lottie-player
+            src="https://assets10.lottiefiles.com/packages/lf20_2izf8ihg.json"
+            background="transparent"
+            speed="1"
+            style={{ width: "400px", height: "400px" }}
+            loop
+            autoplay
+          ></lottie-player>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Home;

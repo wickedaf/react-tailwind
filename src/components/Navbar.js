@@ -1,11 +1,12 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-export default function NavBar() {
+const Navbar = () => {
   return (
     <nav className="bg-white shadow" role="navigation">
       <div className="container mx-auto p-4 flex flex-wrap items-center md:flex-no-wrap">
         <div className="mr-4 md:mr-8">
-          <a href="#" rel="home">
+          <a href="/" rel="home">
             <svg
               className="w-10 h-10 text-purple-600"
               width="54"
@@ -60,4 +61,6 @@ export default function NavBar() {
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
